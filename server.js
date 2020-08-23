@@ -1,12 +1,12 @@
 const express = require("express");
-const morgan = require("morgan");
+//const morgan = require("morgan");
 const bodyParser = require("body-parser");
 var fetch = require("node-fetch");
 
 const app = express();
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
-}
+//if (process.env.NODE_ENV === "development") {
+  //app.use(morgan("dev"));
+//}
 app.use(bodyParser.json());
 
 app.get("/api", (req, res) => {
