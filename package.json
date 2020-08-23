@@ -4,6 +4,7 @@
   "description": "titanic survival predictor",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
